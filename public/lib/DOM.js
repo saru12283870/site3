@@ -1,4 +1,5 @@
-class domC {
+let DOM={
+    domC:class {
     constructor(element) {
         this.element=element
     }
@@ -51,9 +52,9 @@ class domC {
         newElement.innerHTML = this.element.innerHTML;
         this.element.replaceWith(newElement);
         this.element=newElement
-}}
+}},
 
-let domO={
+domO:{
     get(element="p"){
         return{
             element:typeof(element)==typeof("")?document.querySelector(element):element,
@@ -110,4 +111,4 @@ let domO={
         }
     },
     id(element=""){return document.getElementById(element)}
-}
+}}
