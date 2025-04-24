@@ -1,5 +1,5 @@
 async function main() {
     console.log(await readline("WS >"));
-    main()
+    await main()
 }
-main()
+await main()
