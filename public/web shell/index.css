@@ -1,16 +1,21 @@
+*{
+    background-color: rgb(34, 34, 34);
+    color: honeydew;
+    font: 16px "Noto Sans JP";
+}
 body{
     background-color: rgb(34, 34, 34);
     font: 16px "Noto Sans JP";
 }
 input{
-    border: none;
-    background-color: rgb(34, 34, 34);
-    outline: none;
-    color: honeydew;
-    font: 16px "Noto Sans JP";
     field-sizing: content;
     resize: none;
     min-width: 300px;
+    outline: none;
+    border: none;
+    background-color: rgb(34, 34, 34);
+    color: honeydew;
+    font: 16px "Noto Sans JP";
 }
 #openFile{
     display: none;
@@ -22,4 +27,7 @@ pre{
     margin-top: 0px;
     margin-bottom: 0px;
     display: inline;
+}
+a{
+    text-decoration: none;
 }
