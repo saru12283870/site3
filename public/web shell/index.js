@@ -1,5 +1,5 @@
 async function main() {
-    let a=await readline("入力してください:")
-    console.log(a);
+    console.log(await readline("WS >"));
+    main()
 }
 main()
