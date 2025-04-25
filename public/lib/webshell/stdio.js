@@ -31,8 +31,3 @@ async function readline(massage="") {
     await promise.then(()=>{})
     return input.value
 }
-async function main() {
-    let a=await readline("入力してください:")
-    console.log(a);
-}
-await main()
