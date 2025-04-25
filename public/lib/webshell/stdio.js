@@ -27,6 +27,7 @@ async function readline(massage="") {
         
     })
     con.appendChild(input)
+    input.focus()
     con.appendChild(document.createElement("br"))
     await promise.then(()=>{})
     return input.value
