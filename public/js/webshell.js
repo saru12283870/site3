@@ -1,11 +1,12 @@
-async function main() {
-    await readline(`WS  ${localStorage.cd==undefined?"":localStorage.cd}>`)
-    if (localStorage.fd==undefined) {
-        localStorage.fd=await openFile()
-        localStorage.cd=fd.name
-    }
-    console.log();
+let cd="",fd,bcd,input
 
-    await main()
+async function main() {
+    input=await readline(`WS  ${cd}>`)
+    if(fd==undefined){
+        fd=await openFile()
+        bcd=fd.name
+        cd=bcd
+    }
+    main()
 }
 main()
